@@ -1,53 +1,79 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>CSS Stylesheets with Relative Paths</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is the official portfolio page of Kenneth M. Lopez ">
+    <meta name="keywords" content="Kenneth M. Lopez, portfolio, biography, contact,">
+    <meta name="author" content="Kenneth M. Lopez">
 
-    <!-- This line is money! It points your HTML to the CSS file. -->
-    <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+    <title> Kenneth M. Lopez | Contact</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
 </head>
 
 <body>
-    <header>
-        <h1>Contact</h1>
-    </header>
+    <div id="top_pane" class="clearfix">
+        <div class="container">
+            <header>
+                <p id="website_name"> Kenneth M. Lopez </p>
+            </header>
 
+            <nav id="website_menu">
+                <a href="index.html">About Me</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html" class="last_link">Contact</a>
+            </nav>
+        </div>
+    </div>
 
-    <ul>
-        <li><a href="index.html">About</a></li>
-        <li><a href="contact.html">contact</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-    </ul>
-    <div class="container">
+    <div id="middle_pane" class="container clearfix">
+        <section class="left_pane">
+            <article>
+                <header>
+                    <h1>Contact</h1>
+                </header>
 
-        <section id="main-bio">
+                <form action="#">
+                    <label for="form_name">Name <strong>(required)</strong></label>
+                    <input type="text" id="form_name" name="user_name" placeholder="John Smith" required>
+                    <br>
 
-            <h2></h2>
+                    <label for="form_email">Email <strong>(required)</strong></label>
+                    <input type="text" id="form_email" name="user_email" placeholder="john.smith@example.com" required>
+                    <br>
 
-            <img id="bio-image" src="" alt="Your Name">
+                    <label for="form_message">Message <strong>(required)</strong></label>
+                    <textarea id="form_message" maxlength="200" rows="6" required></textarea>
 
-            <p>
-
-
-                <a href="http://www.lipsum.com/"></a>
-            </p>
+                    <input type="submit" id="form_submit" value="Submit">
+                </form>
+            </article>
         </section>
 
-        <section id="contact-info">
-            <h2>Contact Info</h2>
-            <ul>
-                <li><strong>Email:</strong> <a href="#">kml.rules@yahoo.com</a></li>
-                <li><strong>Github:</strong> <a href="#">https://github.com/koderken/koderken.github.io</a></li>
-                <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
-            </ul>
+        <section class="right_pane">
+            <header>
+                <h2>Connect with Me</h2>
+            </header>
+
+            <figure>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="assets/images/icon_linkedin.png" alt="link to LinkedIn Kenneth's page"></a>
+                <a href="https://github.com/" target="_blank"><img src="assets/images/icon_github.png" alt="link to GitHub Kennneth's page"></a>
+                <a href="https://" target="_blank"><img src="assets/images/icon_wordpress.png" alt="link to Kenneth's page"></a>
+                <a href="https://" target="_blank"><img src="assets/images/icon_stackoverflow.png" alt="link to Kenneth's page"></a>
+            </figure>
         </section>
     </div>
 
+    <div id="bottom_pane" class="clearfix">
+        <div class="container">
+            <footer>
 
+            </footer>
+        </div>
+    </div>
 </body>
 
 </html>
